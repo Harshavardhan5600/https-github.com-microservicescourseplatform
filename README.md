@@ -1,2 +1,2 @@
 # https-github.com-microservicescourseplatform
-CourseHib Microservices System
+CourseHub Microservices System
