@@ -1,0 +1,29 @@
+import React, { useState } from "react";
+import API from "../services/api";
+
+function Enrollment() {
+  const [userName, setUserName] = useState("");
+  const [courseName, setCourseName] = useState("");
+
+  const enroll = async () => {
+    await API.post("/enrollement/save", {
+      userName,
+      courseName
+    });
+
+    alert("Enrolled successfully");
+  };
+
+  return (
+    <div>
+      <h2>Enroll</h2>
+
+      <input placeholder="User Name" onChange={(e) => setUserName(e.target.value)} />
+      <input placeholder="Course Name" onChange={(e) => setCourseName(e.target.value)} />
+
+      <button onClick={enroll}>Enroll</button>
+    </div>
+  );
+}
+
+export default Enrollment;
