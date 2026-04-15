@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+</head>
+<body>
+    <h1>Library Management</h1>
+    <form id="libraryForm">
+        <input type="text" id="serial" placeholder="Serial" required />
+        <input type="text" id="book" placeholder="Book" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="number" id="pages" placeholder="Pages" required />
+        <button type="submit">Add/Update Library</button>
+    </form>
+
+    <h2>Library List</h2>
+    <table border="1" id="libraryTable">
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Library items will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
